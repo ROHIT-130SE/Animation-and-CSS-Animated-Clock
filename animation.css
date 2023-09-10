@@ -1,0 +1,112 @@
+@keyframes moveAround {
+  0%, 100% {
+    left: 0vh;
+    top: 0vh;
+    background-color: red;
+  }
+
+  25% {
+    left: 100vh;
+    top: ovh;
+    background-color: green;
+    border-style: ridge;
+  }
+
+  50% {
+    left: 100vh;
+    top: 50vh;
+    background-color: blue;
+    border-radius: 100px;
+    border-style: dotted;
+  }
+
+  75% {
+    left: 0vh;
+    top: 50vh;
+    background-color: yellow;
+    border-style: dashed;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  margin: 2px;
+  float: left;
+  background-color: #91d18b;
+  opacity: 0.8;
+  transition: background-color 1s ease-in, opacity 100ms ease-in;
+}
+
+.box1 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.box1 {
+  width:200px;
+  height: 200px;
+  background-color: red;
+
+  position: relative;
+
+  animation-name: moveAround;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.box1:hover {
+  background-color: black;
+  opacity: 1;
+}
+
+.container1 {
+  margin-top: 60vh;
+  text-align: center;  
+}
+
+.box2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 40px;
+  border-radius: 5px;
+  background-color: #FF5678;
+}
+
+@keyframes pulse {
+
+  0% {
+
+                   transform: scale(0.75);
+
+  }
+
+    50% {
+
+                   transform: scale(1.25);
+
+  }
+
+    100% {
+
+                   transform: scale(0.75);
+
+  }
+
+}
+
+.box2 {
+  animation: pulse 1s ease-in-out infinite;
+}
